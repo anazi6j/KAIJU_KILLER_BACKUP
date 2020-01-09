@@ -52,10 +52,10 @@ namespace EquipmentManager
 
                 Render_Head[i].AddComponent<MeshFilter>();
                 Render_Head[i].AddComponent<MeshRenderer>();
-               
+                Render_Head[i].AddComponent<Renderer>();
                 
                 Render_Head[i].GetComponent<MeshFilter>().mesh = Head_tempo[i].meshparts.sharedMesh;
-                GetComponent<MeshRenderer>().sharedMaterials[0] = mat;
+                Render_Head[i].GetComponent<Renderer>().material = mat;
                 Render_Head[i].transform.parent = Parent_head.transform;
                 Render_Head[i].transform.localPosition = Vector3.zero;
                 Render_Head[i].transform.localScale = Vector3.one;
@@ -77,9 +77,10 @@ namespace EquipmentManager
 
                 Render_RA[i].AddComponent<MeshFilter>();
                 Render_RA[i].AddComponent<MeshRenderer>();
-
+                Render_RA[i].AddComponent<Renderer>();
                 Render_RA[i].GetComponent<MeshFilter>().mesh = Rightarm_tempo[i].meshparts.sharedMesh;
                 Render_RA[i].transform.parent = Parent_RightArm.transform;
+                Render_RA[i].GetComponent<Renderer>().material = mat;
                 Material[] material = GetComponent<MeshRenderer>().materials;
                 material[0] = mat;
 
@@ -101,12 +102,10 @@ namespace EquipmentManager
 
                 Render_LA[i].AddComponent<MeshFilter>();
                 Render_LA[i].AddComponent<MeshRenderer>();
-                GetComponent<MeshRenderer>().sharedMaterials[0] = mat;
+                Render_LA[i].AddComponent<Renderer>();
                 Render_LA[i].GetComponent<MeshFilter>().mesh = Rightarm_tempo[i].meshparts.sharedMesh;
-                Material[] material = GetComponent<MeshRenderer>().materials;
-                material[0] = mat;
-
-                GetComponent<MeshRenderer>().materials = material;
+                Render_LA[i].GetComponent<Renderer>().material = mat;
+                
                 Render_LA[i].transform.parent = Parent_LeftArm.transform;
                 Render_LA[i].transform.localPosition = Vector3.zero;
                 Render_LA[i].transform.localScale = Vector3.one;
@@ -124,12 +123,11 @@ namespace EquipmentManager
 
                 Render_Body[i].AddComponent<MeshFilter>();
                 Render_Body[i].AddComponent<MeshRenderer>();
-                GetComponent<MeshRenderer>().sharedMaterials[0] = mat;
+                Render_Body[i].AddComponent<Renderer>();
                 Render_Body[i].GetComponent<MeshFilter>().mesh = Body_tempo[i].meshparts.sharedMesh;
                 Material[] material = GetComponent<MeshRenderer>().materials;
                 material[0] = mat;
-
-                GetComponent<MeshRenderer>().materials = material;
+                Render_Body[i].GetComponent<Renderer>().material = mat;
                 Render_Body[i].transform.parent = Parent_Body.transform;
                 Render_Body[i].transform.localPosition = Vector3.zero;
                 Render_Body[i].transform.localScale = Vector3.one;
@@ -148,9 +146,11 @@ namespace EquipmentManager
 
                 Render_LEG[i].AddComponent<MeshFilter>();
                 Render_LEG[i].AddComponent<MeshRenderer>();
+                Render_LEG[i].AddComponent<Renderer>();
                 GetComponent<MeshRenderer>().sharedMaterials[0] = mat;
                 Render_LEG[i].GetComponent<MeshFilter>().mesh = Leg_tempo[i].meshparts.sharedMesh;
                 Render_LEG[i].transform.parent = Parent_Leg.transform;
+                Render_LEG[i].GetComponent<Renderer>().material = mat;
                 Material[] material = GetComponent<MeshRenderer>().materials;
                 material[0] = mat;
 
@@ -172,8 +172,10 @@ namespace EquipmentManager
                 Render_LEG_L[j].AddComponent<MeshRenderer>();
                 Material[] material = GetComponent<MeshRenderer>().materials;
                 material[0] = mat;
+                Render_LEG_L[j].AddComponent<Renderer>();
 
-                GetComponent<MeshRenderer>().materials = material;
+                Render_LEG_L[j].GetComponent<Renderer>().material = mat;
+                
                 Render_LEG_L[j].GetComponent<MeshFilter>().mesh = Leg_tempo[j].meshparts.sharedMesh;
                 Render_LEG_L[j].transform.parent = Parent_Leg2.transform;
                 Render_LEG_L[j].transform.localPosition = Vector3.zero;
