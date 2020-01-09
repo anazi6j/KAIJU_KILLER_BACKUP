@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e9fce348996ca4bbd92521effc0724, type: 3}
+  m_Name: Equipment_Nottest
+  m_EditorClassIdentifier: 
+  type: {fileID: 0}
+  headlist:
+  - {fileID: 7043768024322185177, guid: a0cfc4bc1f87e3a40a56b46ea2b6867d, type: 3}
+  - {fileID: 3468830899404446813, guid: bc97de7d923e4eb4a9cba4586583336b, type: 3}
+  rightarmlist:
+  - {fileID: -1749761544566947545, guid: 171e69b5dcca78e41abc93590b0c26ec, type: 3}
+  - {fileID: -368493937474902454, guid: c56cdfbd5daeef043be4af306d5724ac, type: 3}
+  leftarmlist:
+  - {fileID: 5981549130578820115, guid: 4c965c0a04a3ea64199119b39ae62321, type: 3}
+  - {fileID: -3859009031558108115, guid: 369b48fd084294f4cbb87ea13538cffb, type: 3}
+  bodylist:
+  - {fileID: -559659765911270732, guid: 9684a6f3fde78b3479349861003943d2, type: 3}
+  - {fileID: 4458194703079756883, guid: 7105d81b30fb5b844981a9c088240808, type: 3}
+  leglist:
+  - {fileID: 8678788340518352782, guid: e6d996e7b0a23dd41aee8e89ed66cb2a, type: 3}
+  - {fileID: 151009757306763175, guid: b4e30fbd894443d419f853fe3e7772b1, type: 3}
