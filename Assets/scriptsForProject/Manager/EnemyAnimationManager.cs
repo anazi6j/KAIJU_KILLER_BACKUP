@@ -99,7 +99,18 @@ namespace robot
 
        public  void InitAttackparams(EnemyParamTable param)
         {
-            
+            /*
+            for (int i = 0; i < param.closeAttacks.Count; i++)
+            {
+                c_attacks[i].attackanim = param.closeAttacks[i].attackanim;
+                c_attacks[i].attackpower = param.closeAttacks[i].attackpower;
+                c_attacks[i].attackstrength = param.closeAttacks[i].attackstrength;
+                c_attacks[i].intervaltime = param.closeAttacks[i].intervaltime;
+
+               //c_attacks[i].colliders = param.closeAttacks[i].colliders;
+               
+            }
+            */
             for(int i=0;i<epm.closeAttacks.Count;i++)
             {
                 c_attacks.Add(new CloseAttacks(param.closeAttacks[i].attackanim, param.closeAttacks[i].attackpower,
